@@ -3,7 +3,7 @@ let inputSearch = document.getElementById('inputBuscador')
 let btnBuscador = document.getElementById('btnBuscarArticulo')
 let formularioBuscador = document.getElementById('formBuscador')
 let contenedorArticulo = document.getElementById('contenedorArticulos')
-
+//manejador de eventos
 formularioBuscador.addEventListener('submit', buscarArticulo);
 
 function buscarArticulo(e) {
@@ -23,4 +23,3 @@ function buscarArticulo(e) {
       }
     });
   }
-  
