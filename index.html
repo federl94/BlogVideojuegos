@@ -12,12 +12,15 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comme&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
     <title>Blog Video Juegos</title>
   </head>
   <body>
     <header>
-      <nav class="navbar bg-primary" data-bs-theme="dark">
+      <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">RollingGamming</a>
           <button
@@ -38,6 +41,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pages/error404.html">Los más jugados del 2023</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/integrantes.html">Integrantes</a>
               </li>            
             </ul>
             <form id="formBuscador" class="d-flex" role="search">
@@ -53,7 +59,7 @@
               />
               <button
                 id="btnBuscarArticulo"
-                class="btn btn-outline-success"
+                class="btn btn-success"
                 type="submit"
               >
                 Buscar
@@ -67,7 +73,7 @@
       <section class="container-fluid p-lg-5 pb-3">
         <article
           id="contenedorArticulos"
-          class="row row-cols-1 row-cols-md-2 mb-lg-3 mx-auto"
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-lg-3 mx-auto"
         >
           <div class="col" id="cardArticulo">
             <div class="card mt-3 mx-auto" style="width: 18rem">
@@ -75,16 +81,16 @@
                 src="./img/finalfantasy.jpg"
                 style="width: 100%"
                 class="card-img-top img-fluid mx-auto"
-                alt="Final fantasy"
+                alt="Apex Legeds"
               />
               <div class="card-body bg-card">
-                <h5 class="card-title">Final Fantasy XVI</h5>
+                <h5 class="card-title">Apex Legends</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Recusandae perferendis perspiciatis non odit commodi fuga?
                 </p>
                 <a
-                  href="./pages/error404.html"
+                  href="./pages/articulo1.html"
                   class="btn btn-primary mt-2 text-center"
                   >Ver artículo</a
                 >
@@ -97,16 +103,16 @@
                 src="./img/starfield.jpeg"
                 style="width: 100%"
                 class="card-img-top img-fluid mx-auto"
-                alt="starfield"
+                alt="Battlefield uno"
               />
               <div class="card-body bg-card">
-                <h5 class="card-title">Starfield</h5>
+                <h5 class="card-title">Battlefield 1</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Recusandae perferendis perspiciatis non odit commodi fuga?
                 </p>
                 <a
-                  href="./pages/error404.html"
+                  href="./pages/articulo2.html"
                   class="btn btn-primary mt-2 text-center"
                   >Ver artículo</a
                 >
@@ -119,16 +125,16 @@
                 src="./img/avatar.jpg"
                 style="width: 100%"
                 class="card-img-top img-fluid mx-auto"
-                alt="Avatar: frontiers of Pandora"
+                alt="FIFA 2023"
               />
               <div class="card-body bg-card">
-                <h5 class="card-title">Avatar: frontiers of Pandora</h5>
+                <h5 class="card-title">FIFA 2023</h5>
                 <p class="card-text">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Recusandae perferendis perspiciatis non odit commodi fuga?
                 </p>
                 <a
-                  href="./pages/error404.html"
+                  href="./pages/articulo3.html"
                   class="btn btn-primary mt-2 text-center"
                   >Ver artículo</a
                 >
@@ -212,6 +218,6 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/app.js"></script>
+    <script src="./js/buscador.js"></script>
   </body>
 </html>
