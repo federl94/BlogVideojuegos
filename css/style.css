@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Comme", sans-serif;
+}
 .modalContainer {
   position: fixed;
   z-index: 1000;
@@ -28,9 +31,24 @@
   position: relative;
   transition: transform 1s;
   transform: translateY(0%);
+  border-radius: 10px;
 }
 
 .modal img {
   height: 50%;
   width: 40%;
+}
+
+.cerrar {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: #c44a4a;
+  color: #fff;
+  line-height: 25px;
+  cursor: pointer;
+  border-radius: 50%;
 }
