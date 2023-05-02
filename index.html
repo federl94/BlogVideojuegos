@@ -1,19 +1,223 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blog Video Juegos">
-    <meta name="keywords" content="Dom, Bom, Javascript">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blog Video Juegos" />
+    <meta name="keywords" content="Dom, Bom, Javascript" />
+    <meta name="author" content="Rita Astorga, Juan Pablo Miranda, Federico Rueda Leal">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Blog Video Juegos</title>
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">RollingGamming</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/error404.html">Los más jugados del 2023</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/integrantes.html">Integrantes</a>
+              </li>            
+            </ul>
+            <form id="formBuscador" class="d-flex" role="search">
+              <input
+                id="inputBuscador"
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar artículo"
+                aria-label="Search"
+                minlength="2"
+                maxlength="30"
+                
+              />
+              <button
+                id="btnBuscarArticulo"
+                class="btn btn-success"
+                type="submit"
+              >
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container-fluid">
+      <section class="container-fluid p-lg-5 pb-3">
+        <article
+          id="contenedorArticulos"
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-lg-3 mx-auto"
+        >
+          <div class="col" id="cardArticulo">
+            <div class="card mt-3 mx-auto" style="width: 18rem">
+              <img
+                src="./img/apexlegends.jpg"
+                style="width: 100%"
+                class="card-img-top img-fluid mx-auto"
+                alt="Apex Legeds"
+              />
+              <div class="card-body bg-card">
+                <h5 class="card-title fw-bold">Apex Legends</h5>
+                <hr>
+                <p class="card-text">
+                  Apex Legends ocurre 30 años post Batalla de Typhon en Tierras Salvajes, una región periférica de La Frontera. La guerra ha acabado, supuestamente con la derrota del IMC, aunque no se sabe con certeza su final.
+                </p>
+                <a
+                  href="./pages/articulo1.html"
+                  class="btn btn-primary mt-2 text-center"
+                  >Ver artículo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col" id="cardArticulo">
+            <div class="card mt-3 mx-auto" style="width: 18rem">
+              <img
+                src="./img/battlefield1.png"
+                style="width: 100%"
+                class="card-img-top img-fluid mx-auto"
+                alt="Battlefield uno"
+              />
+              <div class="card-body bg-card">
+                <h5 class="card-title fw-bold">Battlefield 1</h5>
+                <hr>
+                <p class="card-text">
+                  Basada en otoño de 1918 durante la Batalla de Cambrai en la Ofensiva de los Cien Días, los jugadores asumen el rol de Danny Edwards, un ex chófer que se enlista en la guerra como un conductor de tanque británico.
+                </p>
+                <a
+                  href="./pages/articulo2.html"
+                  class="btn btn-primary mt-2 text-center"
+                  >Ver artículo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col" id="cardArticulo">
+            <div class="card mt-3 mx-auto" style="width: 18rem">
+              <img
+                src="./img/FIFA23.jpg"
+                style="width: 100%"
+                class="card-img-top img-fluid mx-auto"
+                alt="FIFA 2023"
+              />
+              <div class="card-body bg-card">
+                <h5 class="card-title fw-bold">FIFA 2023</h5>
+                <hr>
+                <p class="card-text">
+                  La tendencia iniciada en 2022 sigue su curso: EA Sports ofrece novedades en todas las ediciones de la nueva entrega con la excepción de FIFA 23 Legacy Edition, la cual es una puesta al día de los contenidos de FIFA 20.
+                </p>
+                <a
+                  href="./pages/articulo3.html"
+                  class="btn btn-primary mt-2 text-center"
+                  >Ver artículo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col" id="cardArticulo">
+            <div class="card mt-3 mx-auto" style="width: 18rem">
+              <img
+                src="./img/streetfighter.jpg"
+                style="width: 100%"
+                class="card-img-top img-fluid mx-auto"
+                alt="Street Fighter"
+              />
+              <div class="card-body bg-card">
+                <h5 class="card-title fw-bold">Street Fighter 6</h5>
+                <hr>
+                <p class="card-text">
+                  Máximo espíritu competitivo, sensaciones genuinamente arcade y diversión constante. Street Fighter 6 es mucho más que el enésimo reencuentro entre Ryu, Ken, Chun Li, y compañía: estamos ante el retorno del rey.
+                <a
+                  href="./pages/error404.html"
+                  class="btn btn-primary mt-2 text-center"
+                  >Ver artículo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col" id="cardArticulo">
+            <div class="card mt-3 mx-auto" style="width: 18rem">
+              <img
+                src="./img/starwarsjedi.jpg"
+                style="width: 100%"
+                class="card-img-top img-fluid mx-auto"
+                alt="Star Wards Jedi"
+              />
+              <div class="card-body bg-card">
+                <h5 class="card-title fw-bold">Star Wards Jedi: Fallen Order</h5>
+                <hr>
+                <p class="card-text">
+                  Si observamos la época en la que se desarrolla descubriremos que transcurre 14 años antes de la batalla de Yavin (la que acabó con la primera Estrella de la Muerte).</p>
+                <a
+                  href="./pages/error404.html"
+                  class="btn btn-primary mt-2 text-center"
+                  >Ver artículo</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col" id="cardArticulo">
+            <div class="card mt-3 mx-auto" style="width: 18rem">
+              <img
+                src="./img/hogwartslegacy.png"
+                style="width: 100%"
+                class="card-img-top img-fluid mx-auto"
+                alt="Hogwarts Legacy"
+              />
+              <div class="card-body bg-card">
+                <h5 class="card-title fw-bold">Hogwarts Legacy</h5>
+                <hr>
+                <p class="card-text">
+                  En esta aventura, creamos a un estudiante de quinto año en Hogwarts, ya sea mago o bruja. Lo normal es que todos los alumnos comiencen con 11 años en el primer curso, pero en nuestro caso ha sido diferente.
+                </p>
+                <a
+                  href="./pages/error404.html"
+                  class="btn btn-primary mt-2 text-center"
+                  >Ver artículo</a
+                >
+              </div>
+            </div>
+          </div>
+          
+        </article>
+      </section>
+    </main>
+    <footer class="bg-primary text-light py-4 text-center">
+      <p>&copy; Todos los derechos reservados</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/buscador.js"></script>
+  </body>
 </html>
