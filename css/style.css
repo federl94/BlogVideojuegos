@@ -1,15 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&family=Comme&family=Dancing+Script:wght@400;500;600;700&family=Fira+Sans:wght@300&family=Lato:wght@300;400;900&family=Lobster&family=Montserrat:wght@300&family=Mr+Dafoe&family=Pacifico&family=Permanent+Marker&family=Roboto:wght@300&family=Rock+Salt&family=Rubik+Distressed&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  font-family: "Comme", sans-serif;
-}
-
 .modalContainer {
   position: fixed;
   z-index: 1000;
@@ -56,3 +49,96 @@ body {
   cursor: pointer;
   border-radius: 50%;
 }
+body{
+    font-family: 'Comme', sans-serif;
+}
+
+.imagenPortada{
+    max-width: 100%;
+}
+.fondoGris{
+    background-color: grey;
+}
+.btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.bg-5{
+    background: linear-gradient(135deg, rgb(227, 227, 227) 0%, rgb(93, 104, 116) 100%);
+  }
+ 
+ .animated-shadow {
+   color: #ffffff;
+   height: 100px;
+   left: 0;
+   letter-spacing: 5px;
+   text-align: center;
+   text-transform: uppercase;
+   width: 100%;
+   animation: move linear 2000ms infinite;
+   z-index: 2
+ }
+ /*Animación para rotar las sombras*/
+ @keyframes move {
+   0% {
+     text-shadow:
+       4px -4px 0 #da0641,
+       3px -3px 0 #da0641,
+       2px -2px 0 #da0641,
+       1px -1px 0 #da0641,
+       -4px 4px 0 #13f1fc,
+       -3px 3px 0 #13f1fc,
+       -2px 2px 0 #13f1fc,
+       -1px 1px 0 #13f1fc
+     ;
+   }
+   25% {
+     text-shadow:
+       -4px -4px 0 #13f1fc,
+       -3px -3px 0 #13f1fc,
+       -2px -2px 0 #13f1fc,
+       -1px -1px 0 #13f1fc,
+       4px 4px 0 #da0641,
+       3px 3px 0 #da0641,
+       2px 2px 0 #da0641,
+       1px 1px 0 #da0641
+     ;
+   }
+   50% {
+     text-shadow:
+       -4px 4px 0 #da0641,
+       -3px 3px 0 #da0641,
+       -2px 2px 0 #da0641,
+       -1px 1px 0 #da0641,
+       4px -4px 0 #13f1fc,
+       3px -3px 0 #13f1fc,
+       2px -2px 0 #13f1fc,
+       1px -1px 0 #13f1fc
+     ;
+   }
+   75% {
+     text-shadow:
+       4px 4px 0 #13f1fc,
+       3px 3px 0 #13f1fc,
+       2px 2px 0 #13f1fc,
+       1px 1px 0 #13f1fc,
+       -4px -4px 0 #da0641,
+       -3px -3px 0 #da0641,
+       -2px -2px 0 #da0641,
+       -1px -1px 0 #da0641
+     ;
+   }
+   100% {
+     text-shadow:
+       4px -4px 0 #da0641,
+       3px -3px 0 #da0641,
+       2px -2px 0 #da0641,
+       1px -1px 0 #da0641,
+       -4px 4px 0 #13f1fc,
+       -3px 3px 0 #13f1fc,
+       -2px 2px 0 #13f1fc,
+       -1px 1px 0 #13f1fc
+     ;
+   }
+ }
